@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func ContinueBtn(_ sender: UIButton) {
+        let navi = storyboard?.instantiateViewController(identifier: "LoginPage") as! LoginPage
+        self.navigationController?.pushViewController(navi, animated: true)
+    }
+    
 }
 

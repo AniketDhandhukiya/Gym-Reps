@@ -17,6 +17,7 @@
 		C28DFA3C2A67EA3B00996E3F /* Gym_RepsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DFA3B2A67EA3B00996E3F /* Gym_RepsTests.swift */; };
 		C28DFA462A67EA3C00996E3F /* Gym_RepsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DFA452A67EA3C00996E3F /* Gym_RepsUITests.swift */; };
 		C28DFA482A67EA3C00996E3F /* Gym_RepsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DFA472A67EA3C00996E3F /* Gym_RepsUITestsLaunchTests.swift */; };
+		C6D8A2252A67F44500A4D112 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8A2242A67F44500A4D112 /* LoginPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C28DFA412A67EA3C00996E3F /* Gym RepsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gym RepsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28DFA452A67EA3C00996E3F /* Gym_RepsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_RepsUITests.swift; sourceTree = "<group>"; };
 		C28DFA472A67EA3C00996E3F /* Gym_RepsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_RepsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C6D8A2242A67F44500A4D112 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				C28DFA212A67EA3A00996E3F /* AppDelegate.swift */,
 				C28DFA232A67EA3A00996E3F /* SceneDelegate.swift */,
 				C28DFA252A67EA3A00996E3F /* ViewController.swift */,
+				C6D8A2242A67F44500A4D112 /* LoginPage.swift */,
 				C28DFA272A67EA3A00996E3F /* Main.storyboard */,
 				C28DFA2D2A67EA3B00996E3F /* Assets.xcassets */,
 				C28DFA2F2A67EA3B00996E3F /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 				C28DFA262A67EA3A00996E3F /* ViewController.swift in Sources */,
 				C28DFA222A67EA3A00996E3F /* AppDelegate.swift in Sources */,
 				C28DFA242A67EA3A00996E3F /* SceneDelegate.swift in Sources */,
+				C6D8A2252A67F44500A4D112 /* LoginPage.swift in Sources */,
 				C28DFA2C2A67EA3A00996E3F /* Gym_Reps.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
