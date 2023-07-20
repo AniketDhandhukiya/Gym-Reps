@@ -26,6 +26,6 @@ class ViewController: UIViewController {
         let navi = storyboard?.instantiateViewController(identifier: "LoginPage") as! LoginPage
         self.navigationController?.pushViewController(navi, animated: true)
     }
-    
+    //oiu8h78
 }
 
