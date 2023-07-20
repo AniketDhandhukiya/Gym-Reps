@@ -9,11 +9,14 @@ import UIKit
 
 class LoginPage: UIViewController {
 
+    @IBOutlet weak var TxtEmail: UITextField!
     @IBOutlet weak var Img: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        Img.image?.ciImage?.applyingGaussianBlur(sigma: 25.25)
-        // Do any additional setup after loading the view.
+        TxtEmail.layer.cornerRadius = 21
+        TxtEmail.layer.borderWidth = 1
+        TxtEmail.layer.borderColor = UIColor.white.cgColor
+        
     }
     
 
