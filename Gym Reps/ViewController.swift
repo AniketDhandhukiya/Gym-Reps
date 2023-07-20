@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         signinButton.layer.borderWidth = 1
     }
 
-    @IBAction func ContinueBtn(_ sender: UIButton) {
+    @IBAction func loginBtn(_ sender: UIButton) {
         let navi = storyboard?.instantiateViewController(identifier: "LoginPage") as! LoginPage
         self.navigationController?.pushViewController(navi, animated: true)
     }
