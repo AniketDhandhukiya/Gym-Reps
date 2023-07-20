@@ -9,9 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var signinButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        loginButton.layer.borderColor = UIColor.yellow.cgColor
+        loginButton.layer.borderWidth = 1
+        loginButton.layer.cornerRadius = 11
+        signinButton.layer.cornerRadius = 11
+
+        signinButton.layer.borderColor = UIColor.yellow.cgColor
+        signinButton.layer.borderWidth = 1
     }
 
     @IBAction func ContinueBtn(_ sender: UIButton) {
