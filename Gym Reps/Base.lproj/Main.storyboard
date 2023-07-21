@@ -176,10 +176,10 @@
             </objects>
             <point key="canvasLocation" x="2591.6030534351144" y="-2.1126760563380285"/>
         </scene>
-        <!--Sign Page-->
+        <!--Sign Up Page-->
         <scene sceneID="Zxo-Z1-eRw">
             <objects>
-                <viewController storyboardIdentifier=" d" id="UNg-MU-y5d" customClass="SignPage" customModule="Gym_Reps" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpPage" id="UNg-MU-y5d" customClass="SignUpPage" customModule="Gym_Reps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XAY-gE-xtZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

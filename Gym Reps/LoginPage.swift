@@ -29,7 +29,7 @@ class LoginPage: UIViewController {
     }
     
     @IBAction func loginBtnAction(_ sender: Any) {
-        let navi = storyboard?.instantiateViewController(identifier: "SignPage") as! SignPage
+        let navi = storyboard?.instantiateViewController(identifier: "SignUpPage") as! SignUpPage
         self.navigationController?.pushViewController(navi, animated: true)
     }
     
