@@ -17,6 +17,7 @@
 		C28DFA3C2A67EA3B00996E3F /* Gym_RepsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DFA3B2A67EA3B00996E3F /* Gym_RepsTests.swift */; };
 		C28DFA462A67EA3C00996E3F /* Gym_RepsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DFA452A67EA3C00996E3F /* Gym_RepsUITests.swift */; };
 		C28DFA482A67EA3C00996E3F /* Gym_RepsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DFA472A67EA3C00996E3F /* Gym_RepsUITestsLaunchTests.swift */; };
+		C29DCDA02A6A8F590021453A /* SignPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29DCD9F2A6A8F590021453A /* SignPage.swift */; };
 		C6D8A2252A67F44500A4D112 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8A2242A67F44500A4D112 /* LoginPage.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		C28DFA412A67EA3C00996E3F /* Gym RepsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gym RepsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28DFA452A67EA3C00996E3F /* Gym_RepsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_RepsUITests.swift; sourceTree = "<group>"; };
 		C28DFA472A67EA3C00996E3F /* Gym_RepsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_RepsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C29DCD9F2A6A8F590021453A /* SignPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignPage.swift; sourceTree = "<group>"; };
 		C6D8A2242A67F44500A4D112 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 		C28DFA152A67EA3A00996E3F = {
 			isa = PBXGroup;
 			children = (
+				C29DCD9F2A6A8F590021453A /* SignPage.swift */,
 				C28DFA202A67EA3A00996E3F /* Gym Reps */,
 				C28DFA3A2A67EA3B00996E3F /* Gym RepsTests */,
 				C28DFA442A67EA3C00996E3F /* Gym RepsUITests */,
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C28DFA262A67EA3A00996E3F /* ViewController.swift in Sources */,
+				C29DCDA02A6A8F590021453A /* SignPage.swift in Sources */,
 				C28DFA222A67EA3A00996E3F /* AppDelegate.swift in Sources */,
 				C28DFA242A67EA3A00996E3F /* SceneDelegate.swift in Sources */,
 				C6D8A2252A67F44500A4D112 /* LoginPage.swift in Sources */,

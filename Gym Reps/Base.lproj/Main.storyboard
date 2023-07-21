@@ -127,6 +127,23 @@
                                     <constraint firstAttribute="height" constant="43" id="xxk-CZ-XOt"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A16-WM-SrU">
+                                <rect key="frame" x="268" y="782" width="92" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginBtnAction:" destination="j6w-O7-YkS" eventType="touchUpInside" id="OO4-rg-UpC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="At6-Fx-iSe">
+                                <rect key="frame" x="16" y="785" width="165" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot Password ?"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wDc-3B-CnL"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -159,10 +176,10 @@
             </objects>
             <point key="canvasLocation" x="2591.6030534351144" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Page-->
         <scene sceneID="Zxo-Z1-eRw">
             <objects>
-                <viewController id="UNg-MU-y5d" sceneMemberID="viewController">
+                <viewController storyboardIdentifier=" d" id="UNg-MU-y5d" customClass="SignPage" customModule="Gym_Reps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XAY-gE-xtZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
