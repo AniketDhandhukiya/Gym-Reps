@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>706881174646-etc12i1e0lpgurq1k6lfc5nro5j9fhju.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.706881174646-etc12i1e0lpgurq1k6lfc5nro5j9fhju</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAqIGhdHrrlikKLlaOMYA-uaWuhvKVl9No</string>
+	<key>GCM_SENDER_ID</key>
+	<string>706881174646</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Aniket.Gym-Reps</string>
+	<key>PROJECT_ID</key>
+	<string>gymre-8e742</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gymre-8e742.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:706881174646:ios:7ddf6d63038043c8d23357</string>
+</dict>
+</plist>

@@ -10,6 +10,7 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 import FirebaseCore
+import FirebaseFirestore
 
 class LoginPage: UIViewController {
 
@@ -20,7 +21,6 @@ class LoginPage: UIViewController {
     @IBOutlet weak var TxtEmail: UITextField!
     @IBOutlet weak var Img: UIImageView!
     
-    var ref : DatabaseReference!
     var refa : Firestore!
     
     override func viewDidLoad() {
@@ -34,17 +34,24 @@ class LoginPage: UIViewController {
         lblLogin.layer.borderWidth = 1
         //lblLogin.layer.borderColor = UIColor.sy.cgColor
         lblLogin.layer.cornerRadius = 11
+        refa = Firestore.firestore()
     }
     
     @IBAction func loginBtnAction(_ sender: Any) {
-        Auth.auth().signIn(withEmail: TxtEmail.text!, password: txtPassword.text!) {[self] user, error in
+        //refa.collection("Gym reps").document().setData(["Password": txtPassword.text!])
+        setData()
+    }
+    
+
+    func setData(){
+        Auth.auth().createUser(withEmail: TxtEmail.text!, password: txtPassword.text!) { AuthResult, error in
             if error == nil{
-                print("done")
+                let uid = AuthResult?.user.uid
+                self.refa.collection("user").document()
             }else{
                 print(error?.localizedDescription)
             }
         }
-        
     }
     
 
