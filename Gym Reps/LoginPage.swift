@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
+import FirebaseCore
 
 class LoginPage: UIViewController {
 
@@ -15,6 +19,10 @@ class LoginPage: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var TxtEmail: UITextField!
     @IBOutlet weak var Img: UIImageView!
+    
+    var ref : DatabaseReference!
+    var refa : Firestore!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bgView.layer.cornerRadius = 15
@@ -29,8 +37,14 @@ class LoginPage: UIViewController {
     }
     
     @IBAction func loginBtnAction(_ sender: Any) {
-        let navi = storyboard?.instantiateViewController(identifier: "SignUpPage") as! SignUpPage
-        self.navigationController?.pushViewController(navi, animated: true)
+        Auth.auth().signIn(withEmail: TxtEmail.text!, password: txtPassword.text!) {[self] user, error in
+            if error == nil{
+                print("done")
+            }else{
+                print(error?.localizedDescription)
+            }
+        }
+        
     }
     
 
