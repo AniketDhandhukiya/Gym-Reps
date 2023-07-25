@@ -17,6 +17,14 @@ class ViewController: UIViewController {
         AsaGuestBtn.layer.borderWidth = 0.8
         AsaGuestBtn.layer.borderColor = UIColor.black.cgColor
         AsaGuestBtn.layer.cornerRadius = 11
+        signUpButton.layer.shadowColor = UIColor.black.cgColor
+        signUpButton.layer.shadowOpacity = 4.4
+        signUpButton.layer.shadowRadius = 4.0
+        signUpButton.layer.shadowOffset = CGSize(width: 4, height: 4)
+        loginButton.layer.shadowColor = UIColor.black.cgColor
+        loginButton.layer.shadowOpacity = 4.4
+        loginButton.layer.shadowRadius = 4.0
+        loginButton.layer.shadowOffset = CGSize(width: 4, height: 4)
     }
 
     @IBAction func loginBtn(_ sender: UIButton) {

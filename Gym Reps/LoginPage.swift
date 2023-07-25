@@ -14,13 +14,13 @@ import FirebaseFirestore
 
 class LoginPage: UIViewController {
 
+    @IBOutlet weak var forgotPassBtn: UIButton!
     @IBOutlet weak var bgview2: UIView!
+    @IBOutlet weak var loginB: UIButton!
     @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var lblLogin: UILabel!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var TxtEmail: UITextField!
-    @IBOutlet weak var Img: UIImageView!
-    
     var refa : Firestore!
     
     override func viewDidLoad() {
@@ -32,26 +32,35 @@ class LoginPage: UIViewController {
         bgview2.layer.borderWidth = 1
         bgview2.layer.borderColor = UIColor.white.cgColor
         lblLogin.layer.borderWidth = 1
-        //lblLogin.layer.borderColor = UIColor.sy.cgColor
         lblLogin.layer.cornerRadius = 11
         refa = Firestore.firestore()
     }
     
     @IBAction func loginBtnAction(_ sender: Any) {
-        refa.collection("Gym reps").addDocument(data: ["Email": TxtEmail.text, "Password": txtPassword.text!])
-        //setData()
+        setData()
     }
     
-
+    @IBAction func backBtn(_ sender: Any) {
+        let nav = storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
     func setData(){
-        Auth.auth().createUser(withEmail: TxtEmail.text!, password: txtPassword.text!) { AuthResult, error in
+        Auth.auth().signIn(withEmail: TxtEmail.text!, password: txtPassword.text!) { authDataResult, error in
             if error == nil{
-                let uid = AuthResult?.user.uid
-                self.refa.collection("user").document()
+                print("done")
+                self.navigationToMainPage()
             }else{
                 print(error?.localizedDescription)
             }
         }
+    }
+    
+    
+    func navigationToMainPage(){
+        var navi = storyboard?.instantiateViewController(identifier: "AppPage1") as! AppPage1
+        navigationController?.pushViewController(navi, animated: true)
+        
     }
     
 
