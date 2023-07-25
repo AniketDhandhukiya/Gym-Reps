@@ -38,8 +38,8 @@ class LoginPage: UIViewController {
     }
     
     @IBAction func loginBtnAction(_ sender: Any) {
-        //refa.collection("Gym reps").document().setData(["Password": txtPassword.text!])
-        setData()
+        refa.collection("Gym reps").addDocument(data: ["Email": TxtEmail.text, "Password": txtPassword.text!])
+        //setData()
     }
     
 
