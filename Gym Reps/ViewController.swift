@@ -37,5 +37,9 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(navi, animated: true)
     }
     
+    @IBAction func AsAGuetBtn(_ sender: Any) {
+        var navi = storyboard?.instantiateViewController(identifier: "AppPage1") as! AppPage1
+        navigationController?.pushViewController(navi, animated: true)
+    }
 }
 

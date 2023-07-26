@@ -58,13 +58,36 @@ class SignUpPage: UIViewController {
     }
     
     func addData() {
-        Auth.auth().createUser(withEmail: emailTxt.text!, password: PassTxt.text!) {[self] authDataResult, error in
-            if error == nil{
-                self.refa.collection("user").addDocument(data: ["Name": userTxt.text, "Email or Number": emailTxt.text, "Password": PassTxt.text, "ReEnter Password": rePassTxt.text])
-            }else{
-                print(error.debugDescription)
+        if PassTxt.text != rePassTxt.text {
+            showAlert(messagee: "Password doesn't match")
+            PassTxt.text = ""
+            rePassTxt.text = ""
+        }else if userTxt.text == "" && emailTxt.text == ""{
+            showAlert(messagee: "Please Enter your Details")
+        }else{
+            Auth.auth().createUser(withEmail: emailTxt.text!, password: PassTxt.text!) {[self] authDataResult, error in
+                if error == nil {
+                    proceedBtn()
+                self.refa.collection("user").document(authDataResult!.user.uid).setData(["Name": userTxt.text!, "Email or Number": emailTxt.text!, "Password": PassTxt.text!,"ReEnter Password": rePassTxt.text!])
+                }else{
+                    showAlert(messagee: error!.localizedDescription)
+                    print(error.debugDescription)
+                }
             }
         }
+        
+        
+    }
+    
+    func proceedBtn(){
+        let navi = storyboard?.instantiateViewController(identifier: "LoginPage") as! LoginPage
+        navigationController?.pushViewController(navi, animated: true)
+    }
+    
+    func showAlert(messagee: String){
+        let alert = UIAlertController.init(title: "ERROR", message: messagee, preferredStyle: .alert)
+        alert.addAction(UIAlertAction.init(title: "OK", style: .cancel))
+        present(alert, animated: true,completion: nil)
     }
     
 }

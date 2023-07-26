@@ -46,10 +46,11 @@ class LoginPage: UIViewController {
     }
     
     func setData(){
-        Auth.auth().signIn(withEmail: TxtEmail.text!, password: txtPassword.text!) { authDataResult, error in
+        Auth.auth().signIn(withEmail: TxtEmail.text!, password: txtPassword.text!) {[self] authDataResult, error in
             if error == nil{
                 print("done")
-                self.navigationToMainPage()
+                showAlert(id: "")
+                verifyOtp()
             }else{
                 print(error?.localizedDescription)
             }
@@ -63,5 +64,38 @@ class LoginPage: UIViewController {
         
     }
     
-
+    
+    func showAlert(id:String){
+        let alert = UIAlertController.init(title: "Enter OTP", message: "Please Enter a OTP", preferredStyle: .alert)
+        alert.addTextField()
+        alert.addAction(UIAlertAction.init(title: "Enter", style: .default, handler: { i in
+            self.navigationToMainPage()
+        }))
+        present(alert, animated: true)
+    }
+    
+    func sendOtp(token:String,otp:String){
+        let credential = PhoneAuthProvider.provider().credential(withVerificationID: token, verificationCode: otp)
+        
+        Auth.auth().signIn(with: credential){authresult,error in
+            if error == nil {
+                print("Ok")
+            }
+            else{
+                print(error?.localizedDescription)
+            }
+        }
+    }
+        
+    func verifyOtp(){
+        PhoneAuthProvider.provider().verifyPhoneNumber(TxtEmail.text!, uiDelegate: nil) {[self] verificationId, error in
+            if error == nil{
+                showAlert(id: verificationId!)
+            }else{
+                print(error?.localizedDescription)
+            }
+        }
+    }
+        
+    
 }
