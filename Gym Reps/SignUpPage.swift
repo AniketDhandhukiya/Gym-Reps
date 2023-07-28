@@ -47,6 +47,10 @@ class SignUpPage: UIViewController {
         refa = Firestore.firestore()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        dismiss(animated: true)
+    }
+    
     @IBAction func cancelBtn(_ sender: Any) {
         let navi = storyboard?.instantiateViewController(identifier: "LoginPage") as! LoginPage
         navigationController?.popToRootViewController(animated: true)

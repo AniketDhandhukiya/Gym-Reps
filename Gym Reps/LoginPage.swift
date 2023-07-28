@@ -57,6 +57,10 @@ class LoginPage: UIViewController {
         }
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        dismiss(animated: true)
+    }
+    
     
     func navigationToMainPage(){
         var navi = storyboard?.instantiateViewController(identifier: "AppPage1") as! AppPage1
