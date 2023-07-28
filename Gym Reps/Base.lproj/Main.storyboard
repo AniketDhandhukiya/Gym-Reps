@@ -341,20 +341,32 @@
             </objects>
             <point key="canvasLocation" x="3023.6641221374043" y="-2.1126760563380285"/>
         </scene>
-        <!--App Page1-->
-        <scene sceneID="xXs-Fd-hUj">
+        <!--Main App Page1-->
+        <scene sceneID="xyI-6b-LrP">
             <objects>
-                <viewController storyboardIdentifier="AppPage1" id="hmF-GD-bye" customClass="AppPage1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vdV-wb-j8f">
+                <viewController storyboardIdentifier="mainAppPage1" id="AHQ-Ca-MFA" customClass="mainAppPage1" customModule="Gym_Reps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6vr-9P-BIz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="lpW-1Y-IQe"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CLIENTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nh-gT-Tjq">
+                                <rect key="frame" x="163" y="59" width="67" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nQT-uo-kjv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="cliLb" destination="4nh-gT-Tjq" id="xlk-Ls-EOy"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RQA-7W-G0E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4G5-fg-GdX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3729" y="-2"/>
+            <point key="canvasLocation" x="3743" y="-2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="waW-Cx-fgR">

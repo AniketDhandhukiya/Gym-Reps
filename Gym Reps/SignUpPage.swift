@@ -79,8 +79,6 @@ class SignUpPage: UIViewController {
                 }
             }
         }
-        
-        
     }
     
     func proceedBtn(){

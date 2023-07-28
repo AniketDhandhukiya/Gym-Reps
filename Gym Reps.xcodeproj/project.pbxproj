@@ -10,6 +10,7 @@
 		38BABA06C46899DE40CC43CA /* Pods_Gym_Reps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E72879A103B2B5B41138E1 /* Pods_Gym_Reps.framework */; };
 		7674DFD24901BF217F3E2E03 /* Pods_Gym_Reps_Gym_RepsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B70C64D9A48081A836E4160 /* Pods_Gym_Reps_Gym_RepsUITests.framework */; };
 		88501AE0E3FD1E1FE0C8DE29 /* Pods_Gym_RepsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EFBD2E403615FA67AF0B5D /* Pods_Gym_RepsTests.framework */; };
+		C26AE4DB2A73CE73001CACD8 /* mainAppPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26AE4DA2A73CE73001CACD8 /* mainAppPage1.swift */; };
 		C28DFA222A67EA3A00996E3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DFA212A67EA3A00996E3F /* AppDelegate.swift */; };
 		C28DFA242A67EA3A00996E3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DFA232A67EA3A00996E3F /* SceneDelegate.swift */; };
 		C28DFA262A67EA3A00996E3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DFA252A67EA3A00996E3F /* ViewController.swift */; };
@@ -21,7 +22,6 @@
 		C28DFA462A67EA3C00996E3F /* Gym_RepsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DFA452A67EA3C00996E3F /* Gym_RepsUITests.swift */; };
 		C28DFA482A67EA3C00996E3F /* Gym_RepsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DFA472A67EA3C00996E3F /* Gym_RepsUITestsLaunchTests.swift */; };
 		C292ACCE2A6E95E400471559 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C292ACCD2A6E95E400471559 /* GoogleService-Info.plist */; };
-		C2F068682A6FE54900D9D02C /* AppPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F068672A6FE54900D9D02C /* AppPage1.swift */; };
 		C6D8A2252A67F44500A4D112 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8A2242A67F44500A4D112 /* LoginPage.swift */; };
 		C6DCA9632A6A900100B35192 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DCA9622A6A900100B35192 /* SignUpPage.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +52,7 @@
 		69E72879A103B2B5B41138E1 /* Pods_Gym_Reps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gym_Reps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B70C64D9A48081A836E4160 /* Pods_Gym_Reps_Gym_RepsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gym_Reps_Gym_RepsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A82E2B850250B9248D50BBDD /* Pods-Gym Reps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gym Reps.release.xcconfig"; path = "Target Support Files/Pods-Gym Reps/Pods-Gym Reps.release.xcconfig"; sourceTree = "<group>"; };
+		C26AE4DA2A73CE73001CACD8 /* mainAppPage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainAppPage1.swift; sourceTree = "<group>"; };
 		C28DFA1E2A67EA3A00996E3F /* Gym Reps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Reps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28DFA212A67EA3A00996E3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C28DFA232A67EA3A00996E3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		C28DFA452A67EA3C00996E3F /* Gym_RepsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_RepsUITests.swift; sourceTree = "<group>"; };
 		C28DFA472A67EA3C00996E3F /* Gym_RepsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_RepsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C292ACCD2A6E95E400471559 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C2F068672A6FE54900D9D02C /* AppPage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPage1.swift; sourceTree = "<group>"; };
 		C6D8A2242A67F44500A4D112 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		C6DCA9622A6A900100B35192 /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 		F14CD959FAA025375781E038 /* Pods-Gym Reps-Gym RepsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gym Reps-Gym RepsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Gym Reps-Gym RepsUITests/Pods-Gym Reps-Gym RepsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 				C6DCA9622A6A900100B35192 /* SignUpPage.swift */,
 				C6D8A2242A67F44500A4D112 /* LoginPage.swift */,
 				C28DFA272A67EA3A00996E3F /* Main.storyboard */,
-				C2F068672A6FE54900D9D02C /* AppPage1.swift */,
+				C26AE4DA2A73CE73001CACD8 /* mainAppPage1.swift */,
 				C28DFA2D2A67EA3B00996E3F /* Assets.xcassets */,
 				C28DFA2F2A67EA3B00996E3F /* LaunchScreen.storyboard */,
 				C28DFA322A67EA3B00996E3F /* Info.plist */,
@@ -422,11 +422,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2F068682A6FE54900D9D02C /* AppPage1.swift in Sources */,
 				C6DCA9632A6A900100B35192 /* SignUpPage.swift in Sources */,
 				C28DFA262A67EA3A00996E3F /* ViewController.swift in Sources */,
 				C28DFA222A67EA3A00996E3F /* AppDelegate.swift in Sources */,
 				C28DFA242A67EA3A00996E3F /* SceneDelegate.swift in Sources */,
+				C26AE4DB2A73CE73001CACD8 /* mainAppPage1.swift in Sources */,
 				C6D8A2252A67F44500A4D112 /* LoginPage.swift in Sources */,
 				C28DFA2C2A67EA3A00996E3F /* Gym_Reps.xcdatamodeld in Sources */,
 			);

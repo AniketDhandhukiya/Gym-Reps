@@ -1,10 +1,3 @@
-//
-//  LoginPage.swift
-//  Gym Reps
-//
-//  Created by R88 on 19/07/23.
-//
-
 import UIKit
 import Firebase
 import FirebaseAuth
@@ -37,38 +30,24 @@ class LoginPage: UIViewController {
     }
     
     @IBAction func loginBtnAction(_ sender: Any) {
-        setData()
+        LoginSetUp()
     }
     
     @IBAction func backBtn(_ sender: Any) {
-        let nav = storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
+        _ = storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
         self.navigationController?.popToRootViewController(animated: true)
-    }
-    
-    func setData(){
-        Auth.auth().signIn(withEmail: TxtEmail.text!, password: txtPassword.text!) {[self] authDataResult, error in
-            if error == nil{
-                print("done")
-                showAlert(id: "")
-                verifyOtp()
-            }else{
-                print(error?.localizedDescription)
-            }
-        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         dismiss(animated: true)
     }
     
-    
     func navigationToMainPage(){
-        var navi = storyboard?.instantiateViewController(identifier: "AppPage1") as! AppPage1
+        let navi = storyboard?.instantiateViewController(identifier: "mainAppPage1") as! mainAppPage1
         navigationController?.pushViewController(navi, animated: true)
         
     }
-    
-    
+
     func showAlert(id:String){
         let alert = UIAlertController.init(title: "Enter OTP", message: "Please Enter a OTP", preferredStyle: .alert)
         alert.addTextField()
@@ -77,29 +56,20 @@ class LoginPage: UIViewController {
         }))
         present(alert, animated: true)
     }
+}
+
+//-- Login Code --/
+
+extension LoginPage {
     
-    func sendOtp(token:String,otp:String){
-        let credential = PhoneAuthProvider.provider().credential(withVerificationID: token, verificationCode: otp)
-        
-        Auth.auth().signIn(with: credential){authresult,error in
-            if error == nil {
-                print("Ok")
-            }
-            else{
-                print(error?.localizedDescription)
-            }
-        }
-    }
-        
-    func verifyOtp(){
-        PhoneAuthProvider.provider().verifyPhoneNumber(TxtEmail.text!, uiDelegate: nil) {[self] verificationId, error in
+    func LoginSetUp(){
+        Auth.auth().signIn(withEmail: TxtEmail.text!, password: txtPassword.text!) {[self] authDataResult, error in
             if error == nil{
-                showAlert(id: verificationId!)
+                print("done")
+                showAlert(id: "")
             }else{
-                print(error?.localizedDescription)
+                print(error?.localizedDescription ?? "")
             }
         }
     }
-        
-    
 }
